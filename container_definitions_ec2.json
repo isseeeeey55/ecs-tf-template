@@ -1,0 +1,30 @@
+[
+    {
+        "name": "isseeeeey55-dev-ec2",
+        "image": "XXXXXXXXXXXX.dkr.ecr.ap-northeast-1.amazonaws.com/isseeeeey55-test:latest",
+        "essential": true,
+        "cpu": 10,
+        "memory": 512,
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-region": "ap-northeast-1",
+                "awslogs-stream-prefix": "isseeeeey55-dev",
+                "awslogs-group": "/ecs/isseeeeey55-dev"
+            }
+        },
+        "links": [],
+        "portMappings": [
+            {
+                "protocol": "tcp",
+                "containerPort": 80,
+                "hostPort": 80
+            }
+        ],
+        "entryPoint": [],
+        "command": [],
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": []
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "name": "isseeeeey55-dev",
+        "image": "XXXXXXXXXXXX.dkr.ecr.ap-northeast-1.amazonaws.com/isseeeeey55-test:latest",
+        "essential": true,
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-region": "ap-northeast-1",
+                "awslogs-stream-prefix": "nginx",
+                "awslogs-group": "/ecs/isseeeeey55-dev"
+            }
+        },
+        "portMappings": [
+            {
+                "protocol": "tcp",
+                "containerPort": 80
+            }
+        ]
+    }
+]
